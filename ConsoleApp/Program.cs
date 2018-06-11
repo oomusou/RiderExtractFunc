@@ -6,7 +6,10 @@ namespace ConsoleApp
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var orderService = new OrderService();
+            var result = orderService.CalculatePrice();
+            
+            Console.WriteLine($"Discount Price:{result}");
         }
     }
 }
